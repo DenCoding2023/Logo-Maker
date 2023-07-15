@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { Circle, Polygon, Square } = require('./main/lib/shapes');
-const questions = require('./main/lib/questions');
+const { Circle, Polygon, Square } = require('./lib/shapes');
+const questions = require('./lib/questions');
 
 const init = () => {
   inquirer.prompt(questions).then((data) => {
